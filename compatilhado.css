@@ -1,44 +1,387 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
     --cor-primaria: black; /* Temos que trocar as cores */
     --cor-secundaria:white;
     --cor-terciarea: aqua;
     --cor-hover: #272727;
 
+    --fonte-link-header:" font-family: "Open Sans", sans-serif;";
     --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria:"Montserrat", sans-serif;
+    --fonte:  "Alice", serif;
 } 
 
 
+body{
+    margin: 0;
+}
+
 header{ 
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;  
+    background:linear-gradient(#cfcfcf 10%,#d4d4d4 30%,#cacaca 60%,#dadada 80%,#e1e1e1 100%);
+}
+
+.div1_header{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-nav{
-display: flex;
+
+.class_navi_header-principal{
+    display: flex;
+    align-items: center; 
+    width: 60%;
 }
    
-
-ul{
-    display: flex; 
-    gap: 20px;
+.class_ul_da_navi_do_header-principal{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;  
+ 
 }
 
-
-.class_li_nav_header {
+.class_li_nav_header-principal {
     display: flex;
 }
-a{
+
+
+.class_a_do_ul_do_header-principal{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
     display: flex;
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.div1{
-    width: 30%;
+
+.A_da_logo_do_header-principal{ font-size: 14px;
+    align-items: center;
     display: flex;
-    gap: 20px;
+    width: 15%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+ 
+.class_a_do_ul_do_header-principal:hover {
+    color:purple ;
+}
+
+.A_da_logo_do_header-principal:hover{
+    color: purple;
+}
+span{
+    color: #0f55b2;
+    font-weight:lighter;
+}
+
+/* parte do meio */
+
+
+main ,footer{
+    background:radial-gradient(#02081e 18%,#07152b 50%,#203258 150% ,#255bb1 130%,#217cf4 150%,blue 50%, rgb(88, 199, 236)200%, rgb(75, 154, 211)10%);
+    /* height: 100vh; */
+}
+.section1_do_main{
+    height: 100vh;
+}
+
+.h1_section1_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 52.1px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin: 0;
+ 
+}
+
+.class_p_do_section1_do_main{
+    font-family: "Alice", serif;
+    font-size: 24.9px;
+    font-style: italic;
+    color: white;
+}
+
+.botao_link_do_section1 p{
+    text-decoration: none;
+    color: black;
+    font-size: 23.9px;
+    font-weight: bold;
+   
+    padding: 4px;
+    background: white;
+    width: 13%;
+    border: solid #c3bcbc 1px;
+    border-radius: 70px 70px; 
+    text-align: center;
+    float:inline-start;
+    box-shadow: 15px 20px 13px;
+}
+
+.botao_link_do_section1 p:hover{
+    color: purple;
+    background:rgb(30, 28, 28);
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    border-style: solid;
+    cursor: pointer;
+}
+
+
+
+    /*parte do section2*/
+
+
+.section2_do_main{
+    margin: 0 24%;
+    clear: both;
+    height: 100vh;
+}
+
+.h1_section2_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 52.1px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.ul_do_section2_do_main li{
+    font-size: 19.1px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    list-style-type: none;
+    margin: 25px 0;
+
+}
+
+strong{
+    font-size: 25.4px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+
+}
+
+/* section 4*/
+
+.section4_do_main{
+    height: 100vh;
+}
+
+.h1_do_section4_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48.2px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.class_p_do_section4_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21.5px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+
+}
+
+.botao_link_do_section4 p{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background: white;
+    width: 9%;
+    border-radius: 70px 70px; 
+    text-align: center;
+    float:inline-start;
+    box-shadow: 2px 15px 7px;
+    border: 1px black solid;
+}
+.botao_link_do_section4 p:hover{
+    color: purple;
+    background:rgb(30, 28, 28);
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    border-style: solid;
+
+    
+
+    
+}
+
+/* section 5*/
+
+
+.section5_do_main{
+    height: 100vh;
+}
+
+.h1_do_section5_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48.2px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.class_p_do_section5_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21.5px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+
+}
+
+.botao_link_do_section5 p{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background: white;
+    width: 9%;
+    border-radius: 70px 70px; 
+    text-align: center;
+    float:inline-start;
+    box-shadow: 2px 15px 7px;
+    border: 1px black solid;
+}
+.botao_link_do_section5 p:hover{
+    color: purple;
+    background:rgb(30, 28, 28);
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    border-style: solid;
+}
+
+/* section6 */
+
+.section6_do_main{
+    height: 100vh;
+}
+
+.h1_do_section6_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48.2px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.class_p_do_section6_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21.5px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+
+}
+
+.botao_link_do_section6 p{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background: white;
+    width: 9%;
+    border-radius: 70px 70px; 
+    text-align: center;
+    float:inline-start;
+    box-shadow: 2px 15px 7px;
+    border: 1px black solid;
+}
+.botao_link_do_section6 p:hover{
+    color: purple;
+    background:rgb(30, 28, 28);
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    border-style: solid;
+}
+
+/* section7 */
+
+.section7_do_main{
+    height: 100vh;
+}
+
+.h1_do_section7_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48.2px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.class_p_do_section7_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21.5px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+
+}
+
+.botao_link_do_section7 p{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background: white;
+    width: 9%;
+    border-radius: 70px 70px; 
+    text-align: center;
+    float:inline-start;
+    box-shadow: 2px 15px 7px;
+    border: 1px black solid;
+}
+.botao_link_do_section7 p:hover{
+    color: purple;
+    background:rgb(30, 28, 28);
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    border-style: solid;
+}
+
+/* section8 */
+
+footer{
+    padding: 0 25%;
+}
+.h1_do_section8_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 52.1px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin: 0;
+    text-align: center;
+ 
+}
+.class_p_do_section8_do_main{
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    text-align: center;
+
 }
